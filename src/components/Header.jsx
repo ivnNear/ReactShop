@@ -6,7 +6,7 @@ function Header({x}) {
                 <div className="header-title">
                     <h1>React Good Shop</h1>
                     <h4>Bad quality of bad shoes</h4>
-                    <h2>zcszvv</h2>
+                   
                 </div>
             </div>
             <div className="header-right">
