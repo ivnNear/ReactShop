@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 202, 202);
+    color: rgb(58, 58, 58);
+}
+li{
+    list-style: none;
+}
+
+.container{
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+header{
+    padding: 0 1.5rem;
+    border-bottom: 1px solid rgb(187, 186, 186);
+    display: flex;
+    justify-content: space-between;
+    .header-left{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        img{
+            margin-right: 1rem;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+        h4{
+            opacity: 0.7;
+            font-size: 0.75rem;
+        }
+
+    }
+    .header-right{
+        display: flex;
+        align-items: center;
+
+        img{
+            cursor: pointer;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+main{
+    padding: 2rem 1.5rem;
+
+    .search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input{
+            padding: 4px;
+            outline: none;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
+        .item{
+
+            img{
+                
+                &:first-child{
+                    cursor: pointer;
+                }
+
+            }
+
+            
+
+            
+            width: 250px;
+            margin: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: 0.1s linear;
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            h5{
+                margin-top: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.5rem;
+
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .drawer{
+
+        .cart-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cart-item{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid gray;
+            align-items: center;
+            border-radius: 7px;
+            margin-top: 2rem;
+            padding: 1px 5px;
+            overflow: hidden;
+        }
+
+        .drawer-bottom{
+            button{
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background-color: rgb(47, 129, 47);
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 1.5rem;
+                cursor: pointer;
+                letter-spacing: 4px;
+            }
+        }
+
+        .cart-wrapper{
+           height: 700px;
+           overflow: auto;
+        }
+
+        
+        
+        h5{
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20vw;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        right: 0;
+        padding: 1rem;
+
+        h4{
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
